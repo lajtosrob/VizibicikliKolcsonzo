@@ -69,7 +69,7 @@ namespace VizibicikliKolcsonzo
             int perc = int.Parse(idopontList[1]);
 
             Console.WriteLine("A vizen levő járművek: ");
-            foreach (var kolcsonzes in kolcsonzesek) 
+            foreach (var kolcsonzes in kolcsonzesek)
             {
                 if (ora > kolcsonzes.Eora || ora == kolcsonzes.Eora && perc >= kolcsonzes.Eperc)
                 {
@@ -87,7 +87,7 @@ namespace VizibicikliKolcsonzo
 
             foreach (var item in kolcsonzesek)
             {
-                if (item.Vperc - item.Eperc  <= 30 && item.Vperc - item.Eperc > 0)
+                if (item.Vperc - item.Eperc <= 30 && item.Vperc - item.Eperc > 0)
                 {
                     kolcsonzesiIdo += 30;
                 }
